@@ -223,7 +223,9 @@ button:focus-visible {
 }
 .page-header > .MuiButton-root {
   flex-shrink: 0;
-  background: #fff;
+}
+.mobile-table-hint.MuiTypography-root {
+  display: none;
 }
 .schedule-hero {
   display: flex;
@@ -761,6 +763,13 @@ button:focus-visible {
   }
 }
 @media (max-width: 650px) {
+  .mobile-table-hint.MuiTypography-root {
+    display: block;
+    padding: 12px 16px;
+    font-size: 10px;
+    color: #64756e;
+    background: #fafcfb;
+  }
   .app-topbar {
     padding: 0 18px;
   }

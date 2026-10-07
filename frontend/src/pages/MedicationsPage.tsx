@@ -52,6 +52,9 @@ export function MedicationsPage() {
           </div>
           <MemberFilter value={memberId} onChange={setMemberId} />
         </div>
+        <Typography className="mobile-table-hint" variant="body2">
+          Прокрутите таблицу вправо, чтобы увидеть время и курс.
+        </Typography>
         <TableContainer>
           <Table sx={{ minWidth: 680 }} aria-label="Текущие назначения семьи">
             <TableHead>
