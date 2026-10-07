@@ -10,7 +10,10 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "format": "prettier --write src e2e *.ts *.js *.json",
+    "test:e2e": "playwright test --project=checks",
+    "screenshots": "playwright test --project=screenshots"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -32,6 +35,7 @@
     "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-react-refresh": "0.5.7",
     "globals": "17.13.0",
+    "prettier": "3.9.9",
     "typescript": "6.0.3",
     "typescript-eslint": "8.71.1",
     "vite": "8.3.3"
