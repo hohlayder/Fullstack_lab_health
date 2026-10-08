@@ -9,6 +9,10 @@ playwright-report/
 .env.*
 !.env.example
 .venv/
+.local/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
 __pycache__/
 *.py[cod]
 .DS_Store
